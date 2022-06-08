@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Proyecto TW</title>
+    <link rel="shortcut icon" href="/imgs/logo-urbe5-sinfondo.gif" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/components/layouts.js"></script>
+</head>
+<body class="hist">
+    <header id="header"><script>addPage("#header", "/components/header.html")</script><hr></header>
+    <div align="center">
+        <img src="/imgs/oldOnes.gif" alt="Old" class="banner" loading="lazy">
+    </div>
+    <article>
+        <h1>Desarrollo web tradicional (90s - 2000)</h1>
+        <p>Como se ha mencionado previamente, al principio se hacía casi todo con PHP y por eso no existía o no había una división entre programador Frontend (el que hace el desarrollo para el cliente) y Backend (el que hace el desarrollo para el servidor), en este entonces el monopolio lo tenia Microsoft con su navegador Internet Explorer y este navegador no respetaba ningún estándar y no había muchas opciones, por este motivo tal vez los más veteranos no entiendan muy bien estos términos "actuales"</p>
+        <h1>Sistemas Monolíticos</h1>
+        <p>
+            Los sistemas monolíticos o aplicaciones monolíticas son aquellos sistemas que agrupan sus funcionalidades y servicios en una base única de código. Esto implica que todo lo relacionado al sistema se encuentra dentro de un mismo proyecto (webservices, MCV, seguridad, todos los módulos del sistema, etc.)
+            <br><br>
+            Las primeras aplicaciones de software usaban este tipo de diseño y aunque se han desarrollado alternativas mucho más sofisticadas siguen presentando ventajas y usos importantes como ser:
+            <ol>
+                <li>Fáciles de desarrollar</li>
+                <li>Fáciles de desplegar</li>
+                <li>De fácil ejecución</li>
+            </ol>
+            Debido a las anteriores características en su estructura, el desarrollo de aplicaciones monolíticas en general suele ser mucho menos costoso que sus alternativas.
+            <br><br>
+            Sin embargo, una aplicación que concentra toda su funcionalidad no es necesariamente mejor, en especial si tiende a crecer en complejidad, usuarios, desarrolladores y carga.
+            <br><br>
+            Pero vamos a hablar de un problema más serio, la escalabilidad. Todos los sistemas tienden a crecer con el paso del tiempo y realizar esta actualización en un sistema monolítico tiene sus dificultades – al tratarse de un código único – todo nuevo despliegue requiere relanzar la aplicación en su conjunto.
+            <br><br>
+            Esto, a su vez, puede resultar abrumador para los desarrolladores que necesitan entender el código en su totalidad para poder trabajar en él, pues cualquier paso en falso puede comprometer el código en su conjunto.
+            <br><br>
+            Las decisiones de negocio entre la parte que desarrolla un sistema y las relaciones con los proveedores suelen venderse como una sola unidad y esto muchas veces ata al equipo de trabajo a este tipo de arquitectura.
+            <br><br>
+            Pero no todo es malo dentro de las aplicaciones monolíticas, como ya habíamos mencionado anteriormente tiene una sencillez en su implementación, por lo que si tienes el requerimiento de un sistema con poco modulos y que el tiempo de trabajo no es muy largo, esta alternativa seria la ideal.
+        </p>
+    </article>
+    <br><br>
+    <footer id="footer"><script>addPage("#footer", "/components/footer.html")</script></footer>
+</body>
+</html>

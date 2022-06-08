@@ -1,2 +1,2 @@
 # TW-Proyecto
-Proyecto de "Tecnologías Web"
+Página web para el proyecto de "Tecnologías Web"
