@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características | Proyecto TW</title>
+    <link rel="shortcut icon" href="./imgs/logo-urbe5-sinfondo.gif" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./components/layouts.js"></script>
+</head>
+<body class="cont">
+    <header id="header"><script>addPage("#header", "./components/header.html")</script><hr></header>
+    <div align="center">
+        <img src="./imgs/blockchain-p.gif" alt="Chains" class="banner" loading="lazy">
+    </div>
+    <article>
+        <h1>
+            ¡Contáctenos!
+        </h1>
+        <p>
+            ¿Necesita crear una página web para su sitio personal, emprendimiento, o cualquier proyecto que desee?
+            <br>
+            <span style="color:darkgreen;">¡Póngase en contacto con nosotros ahora mismo!</span>
+            <br>
+            Contamos con experiencia en el desarrollo web tanto en el front-end como en el back-end y podemos crear su sitio según sus requerimientos y en <span style="color:darkgreen;">poco tiempo</span>
+            <br><br>
+            Comuníquese con nosotros mediante el siguiente formulario y con gusto le brindaremos respuesta en breve...
+        </p>
+        <br>
+        <div class="box">
+            <p>Formulario de contacto</p>
+            <form action="#" class="form">
+                <div class="form__group">
+                    <input type="text" placeholder=" " name="nombre" id="nombre" class="form__input"> <label for="#nombre" class="form__label">Nombre</label>
+                    <input type="text" placeholder=" " name="apellido" id="apellido" class="form__input"> <label for="#apellido"class="form__label">Apellido</label>
+                    <input type="text" placeholder=" " name="correo" class="form__input"> <label for="correo"class="form__label">Correo</label>
+                    <input type="text" placeholder=" " name="empresa" class="form__input"> <label for="empresa"class="form__label">Empresa (opcional)</label>
+                    <textarea name="mensaje" placeholder=" " id="sms" cols="30" rows="5" class="textarea"></textarea> <label for="mensaje" class="textarea__label">Ingrese su mensaje</label>
+                    <input type="submit" name="btn" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </article>
+    <footer id="footer"><script>addPage("#footer", "./components/footer.html")</script></footer>
+</body>
+</html>
