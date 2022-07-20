@@ -9,48 +9,222 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./components/layouts.js"></script>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </head>
 <body class="index">
     <header id="header"><script>addPage("#header", "./components/header.html")</script></header>
     <div align="center">
         <img src="./imgs/backend.webp" alt="Backend" class="banner" loading="lazy">
     </div>
-    <article>
+    <article style="text-align: start; margin-bottom: 4rem;">
         <div class="container">
-            <h1 class="title">¿Qué es el backend?, ¿Cuáles son sus diferencias con el frontend y cómo funcionan en la programación?</h1>
+            <div class="title">
+                <h1>¿Qué es el backend?<br> ¿Cuáles son sus diferencias con el frontend y cómo funcionan en la programación?</h1>
+            </div>
             <img src="https://5115875.fs1.hubspotusercontent-na1.net/hub/5115875/hubfs/Backend-y-Frontend-%C2%BFQu%C3%A9-es-c%C3%B3mo-funcionan-en-la-programaci%C3%B3n.jpg?width=950&name=Backend-y-Frontend-%C2%BFQu%C3%A9-es-c%C3%B3mo-funcionan-en-la-programaci%C3%B3n.jpg" alt="Backend" class="myImg">
-            <ul class="redes">
-                <li>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                    </svg></a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
             <div class="autor">
-                <h3>Autores: Andrés Rosales, Daniele Mosquera, Alexander González</h3>
+                <h4>Autores: <span style="color:green;">Andrés Rosales, Daniele Mosquera, Alexander González</span></h4>
+                <div class="redes">
+                    <ul>
+                        <li>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="redes" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="redes" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="redes" fill="black" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com/send?phone=58414062749&text=%C2%A1Hola!%20Necesito%20Informacion" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="redes" fill="black" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Andresaerg/TW-Proyecto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="redes" fill="black" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </article>
+    <img src="https://cdn.dribbble.com/users/2401141/screenshots/5487982/developers-gif-showcase.gif" alt="frontend" class="midSection">
+    <article style="background-color: #fff; padding-top: 50px; padding-bottom: 50px;">
+        <h1>Introducción</h1>
+        <br>
+        <p>
+            Hoy en día, la programación es un ámbito que no para de crecer, desarrollar páginas web, crear aplicaciones y programas que faciliten nuestro día a día o mejoren la experiencia del usuario, son funciones cruciales que desempeñan los desarrolladores.
+            <br><br>
+            Los términos de frontend y backend, tienen cualidades únicas y distintivas, actúan como unidades que por separado, interactúan entre sí para asegurar la funcionalidad de un sitio.
+            <br><br>
+            Para contar con una excelente página digital, se requiere más que un dominio, hipervínculos, meta tags y heading tags, es por ello, que te explicaremos por qué ambos conceptos (Frontend y Backend) son tan importantes.
+        </p>
+        <br><br>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Qué es mejor Back-End o Front-End?
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="prueba">
+                                <p>
+                                    <strong style="font-size: xx-large;">¿Mejor el Frontend o el Backend?</strong>
+                                    <br><br>
+                                    <strong>Ninguna es más importante que la otra,</strong> se complementan y necesitan mutuamente para funcionar, ya que por una parte, los sitios web deben ser bonitos y amigables y por la otra parte ese mismo sitio debe ser funcional y debe poder realizar operaciones.
+                                    En el front-end se necesitan personas con capacidad creativa y en el back-end se necesitan personas con muy buena lógica para resolver problemas.
+                                </p>
+                                <img src="https://www.servnet.mx/hs-fs/hubfs/Blog/Blog_Art%C3%ADculos/Blog_Art%C3%ADculos_2021/Blog_Art%C3%ADculos_2021_Marzo/Blog_Art%C3%ADculos_2021_Marzo_Art47_ByF/Blog_Art%C3%ADculos_2021_Marzo_Art49_ByF_nuevo/%C2%BFQue-es-mejor-Backend-o-Frontend%3F.jpg?width=710&name=%C2%BFQue-es-mejor-Backend-o-Frontend%3F.jpg" alt="bVf" class="images-cont">
+                            </div>
+                            <br><hr><br>
+                            <div class="prueba">
+                                <img src="https://mutarexdigital.com/wp-content/uploads/2020/12/Asset-10-9.png" alt="front" class="images-cont">
+                                <p>
+                                    <strong style="font-size: xx-large;">Y entonces... ¿Qué es frontend?</strong>
+                                        <br><br>
+                                        El frontend es la parte del desarrollo web que se dedica a la parte frontal de un sitio web, en pocas palabras del diseño de un sitio web, desde la estructura del sitio hasta los estilos como colores, fondos, tamaños hasta llegar a las animaciones y efectos.
+                                        <br><br>
+                                        Dentro del área de front-end se trabaja con lenguajes mayormente del lado del cliente, como:
+                                        <br><br>
+                                        HTML (lenguaje de marcado de hipertexto, se utilizan etiquetas que estructuran y organizan el contenido de la web). 
+                                        <br><br>
+                                        CSS (se encarga del formato y diseño visual de las páginas web escritas en html) para darle estructura y estilo al sitio. 
+                                        <br><br>
+                                        Javascript (un lenguaje de programación, rápido y seguro para programar centros de datos, consolas, teléfonos móviles o Internet) para complementar los anteriores y darle dinamismo a los sitios web. 
+                                        <br><br>
+                                        HTML y CSS son lenguajes de marcado y estilo. Javascript es un lenguaje de programación.
+                                        <br><br>
+                                        De ellos se generan una gran cantidad de frameworks y librerías que van aumentan las capacidades que se tiene para generar cualquier tipo de interfaz de usuario, como React, Redux, Angular, Bootstrap, Foundation, LESS, Sass, Stylus y PostCSS, entre otros.                                        
+                                </p>
+                            </div>
+                            <br><hr><br>
+                            <div class="prueba">
+                                <p>
+                                    <strong style="font-size: xx-large;"> En cuanto al Backend...</strong>
+                                    <br><br>
+                                    Es la capa de acceso a los datos, ya sea de un software o de un dispositivo en general, es la lógica tecnológica que hace que una página web funcione, lo que queda oculto a ojos del visitante.
+                                    <br><br>
+                                    Trabajar en este apartado supone algo totalmente diferente al frontend, ya que exige el dominio de otros términos de programación, lenguajes que requieren una lógica, ya que esta área es también la encargada de optimizar recursos, de la seguridad de un sitio y otros factores. 
+                                    <br><br>
+                                    Las herramientas que se utilizan son editores de código, compiladores, debuggeadores para revisar errores de seguridad y gestores de bases de datos.
+                                    <br><br>
+                                    El flujo de trabajo de un backend consiste en darle funciones a un sitio; mientras que el frontend hace un sitio estático, el backend después le da funciones y adapta el sistema programado a ese sitio web. 
+                                    <br><br>
+                                    Otras funciones que se gestionan son:
+                                    <br><br>
+                                    Creación de funciones que simplifiquen el proceso de desarrollo.
+                                    Acciones de lógica.
+                                    Conexión con bases de datos.
+                                    Uso de librerías del servidor web (un ejemplo puede ser para implementar temas de caché).
+                                    Además, debe velar por la seguridad de los sitios web y optimizar al máximo los recursos para que las páginas sean ligeras.
+                                    
+                                    
+                                </p>
+                                <img src="https://www.digitalent.es/wp-content/uploads/2020/06/digitalent_ilustracion_web_02.png" alt="back" class="images-cont">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Forma en que funciona el frontend y el backend
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="prueba">
+                                <img src="https://www.servnet.mx/hs-fs/hubfs/Blog/Blog_Art%C3%ADculos/Blog_Art%C3%ADculos_2021/Blog_Art%C3%ADculos_2021_Marzo/Blog_Art%C3%ADculos_2021_Marzo_Art47_ByF/Blog_Art%C3%ADculos_2021_Marzo_Art49_ByF_nuevo/Funcionamiento-de-Backend-y-Frontend.jpg?width=710&name=Funcionamiento-de-Backend-y-Frontend.jpg" alt="func" class="images-cont">
+                                Considera que una web se conforma por una gran variedad de documentos que se relacionan entre ellos por medio de enlaces, lo que significa que si quieres entrar a una web y escribes la dirección URL en el navegador, se traduce como que estás solicitando que se muestre dicha página web.
+                                <br><br>
+                                Lo siguiente que hará el dispositivo es verificar qué servidor de software tiene el sitio. El servidor recibe esta información, verifica la petición que hizo y te permite ejecutar la acción. 
+                                <br><br>
+                                En ocasiones, se puede presentar el caso de que no se requiere una conexión a la base de datos, por ejemplo, accedes a una página y cuando inicias sesión, se hace de manera automática una petición que conecta a la base de datos para verificar los accesos y la suscripción que se tiene, es allí donde el backend devuelve la respuesta al servidor.
+                                <br><br>
+                                Después aparece el frontend, que es quien va a recibir la información que transmitió el backend y la va a acomodar en la interfaz del sitio web o perfil del usuario.
+                                <br><br>
+                            </div>
+                            <hr>
+                            <div class="prueba">
+                                <p>
+                                <strong style="font-size:xx-large;">Ventajas del frontend y el backend</strong> 
+                                <br><br>
+                                <b>Mayor Escalabildiad:</b>
+                                Se trata de un entorno mucho más escalable, al estar separado, es posible que una de las dos partes necesite más recursos en un algún momento, por lo que se hace más sencillo y eficaz dividir los recursos.
+                                <br><br>
+                                <b>Distintos tipos de desarrollo:</b>
+                                Al tener estas dos partes que se diferencian, puedes tener en tu equipos diversos perfiles dedicados únicamente a su parte del trabajo. 
+                                <br><br>
+                                <b>Ampliación de plataformas disponibles:</b>
+                                Imagina que tienes una web con backend y frontend separados; si requieres desarrollar una app nativa para dispositivos móviles, el desarrollo de la misma será mucho más sencillo, ya que solamente te enfocarías en desarrollar la app. 
+                                <br><br>
+                                La API de comunicación ya la tendrías desarrollada y quizás solamente requeriría de pequeños ajustes, además, en el proceso de desarrollo, la parte front de tu web existente, no se vería afectada en ningún momento.
+                                <br><br>
+                                Las migraciones y actualizaciones son más sencillas
+                                Normalmente, cuando ya está desarrollado el backend, lo que más se suele cambiar es la parte frontend, por esa razón, si te piden actualizaciones de diseño en la web o cambio de alojamiento, es más fácil, ya que la parte de servidor siempre va a estar funcionando por muchas actualizaciones que se tengan en la parte visual.
+                                </p>
+                                <img src="https://www.servnet.mx/hs-fs/hubfs/Blog/Blog_Art%C3%ADculos/Blog_Art%C3%ADculos_2021/Blog_Art%C3%ADculos_2021_Marzo/Blog_Art%C3%ADculos_2021_Marzo_Art47_ByF/Blog_Art%C3%ADculos_2021_Marzo_Art49_ByF_nuevo/Ventajas-de-Backend-y-Frontend.jpg?width=710&name=Ventajas-de-Backend-y-Frontend.jpg" alt="ventajas" class="images-cont">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    ¿Qué diferencias tienen frontend y backend?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <div class="prueba">
+                        <p>
+                            <strong style="font-size: xx-large;">Algunas de las diferencias entre el front y el backend serían...</strong>
+                            <br><br>
+                            Principalmente se determinan por las funciones que realizan en un sitio web, es correcto, más sin embargo hay similitudes y diferencias importantes que te presentaremos a continuación.
+                            <br><br>
+                            Conceptos diferentes
+                            Las diferencias entre frontend y backend resultan evidentes, como se mencionó anteriormente, una es la parte del sitio web con la que puedes ver e interactuar, mientras que en la parte trasera, se engloba el funcionamiento estructural y no es visible por el cliente.
+                            <br><br>
+                            Roles distintos
+                            Frontend tiene que ver con aspectos visuales con los que experimenta cualquier persona, en el backend se atribuye todo lo que sucede en segundo plano porque facilita la interacción web.
+                            <br><br>
+                            Funciones de los desarrolladores de Front End y Back End
+                            Un diseñador web se encarga de construir sitios web teniendo en cuenta los aspectos visuales.
+                            <br><br>
+                            Los desarrolladores web de backend se aseguran de que los datos y sistemas solicitados por el software funcionen de manera eficiente.
+                        </p>
+                        </div>
+                        <div>
+                            <br>
+                            <strong style="font-size: x-large;">A continuación un par de explicaciones sobre este tema Backend-Frontend tratado por el Ing. Héctor de León.</strong>
+                            <br><br>
+                        </div>
+                        <div align="center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mTnSfpckyQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
     </article>
     <footer id="footer"><script>addPage("#footer", "./components/footer.html")</script></footer>
 </body>
