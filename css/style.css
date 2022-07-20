@@ -77,7 +77,7 @@ ul li a:hover{
     color: greenyellow;
 }
 
-body.index a.index, body.def a.def, body.caract a.caract, body.func a.func, body.hist a.hist, body.nec a.nec{
+body.index a.index, body.def a.def, body.cont a.cont, body.func a.func, body.hist a.hist, body.nec a.nec{
     color: greenyellow;
 }
 
@@ -90,7 +90,7 @@ article{
 
 .banner{
     width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     border-radius: 0 0 75px 75px;
 }
 
@@ -112,4 +112,110 @@ article{
 .scroller:hover{
     cursor: pointer;
     background-color: greenyellow;
+}
+
+.form__group{
+    position: relative;
+    --color: #5757577e;
+}
+
+.form__input{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #786c6c;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form__label{
+    color: var(--color);
+    position: absolute;
+    top: auto;
+    left: 5px;
+    transform: translateY(-45px);
+    transition: transform .5s, color .3s;
+}
+
+.form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-70px) scale(.7);
+    transform-origin: top left;
+    --color: green;
+}
+
+.textarea{
+    width: 100%;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #786c6c;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border: 1px solid var(--color);
+    border-radius: 4px;
+}
+
+.textarea__label{
+    color: var(--color);
+    position: absolute;
+    top: auto;
+    left: 5px;
+    transform: translateY(-100px);
+    transition: transform .5s, color .3s;
+}
+
+.textarea:focus + .textarea__label, .textarea:not(:placeholder-shown) + .textarea__label{
+    transform: translateY(-120px) scale(.7);
+    transform-origin: top left;
+    --color: green;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color:  #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.box{
+    margin: 10px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas:"titulo imagen"
+                        "redes imagen";
+    gap: 20px 50px;
+}
+
+.title{
+    display: grid;
+    grid-area: titulo;
+    font-size: xx-large;
+}
+
+.myImg{
+    display: grid;
+    grid-area: imagen;
+    width: 700px;
+    height: 400px;
+}
+
+.redes{
+    grid-area: redes;
+    justify-content: left;
+    
 }
