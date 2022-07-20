@@ -68,6 +68,10 @@ ul li a:hover{
     color: greenyellow;
 }
 
+.burguer{
+    display: none;
+}
+
 .logo{
     color: white;
     text-decoration: none;
@@ -185,6 +189,11 @@ input[type=submit]{
     background-color:  #4CAF50;
     color: white;
     cursor: pointer;
+    transition: 1s;
+}
+
+input[type=submit]:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .box{
@@ -247,6 +256,18 @@ input[type=submit]{
     display: flex;
 }
 
+.grid-Contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"titulo imagen";
+    gap: 20px 50px;
+    background-color: #fff;
+    max-width: 100%;
+    padding: 30px;
+    max-height: fit-content;
+}
+
 @media (max-width:730px){
     Header {
         background-color: black;
@@ -265,7 +286,6 @@ input[type=submit]{
     }
     ul{
         list-style: none;
-        display: inline-flex;
         gap: 20px;
         font-size: medium;
     }
@@ -327,8 +347,50 @@ input[type=submit]{
         max-height: 400px;
         align-self: center;
     }
-
     iframe{
         width: 100%;
     }
+    .burguer{
+        display: block;
+        border-top: 1px solid #4CAF50;
+        align-self: center;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .burguer img:hover{
+        opacity: none;
+    }
+    .grid-Contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"titulo"
+                            "imagen";
+        gap: 20px 50px;
+        background-color: #fff;
+        max-width: 100%;
+        padding: 30px;
+        max-height: fit-content;
+    }
+}
+
+.floatingImgs{
+    float: right;
+    border-radius: 4px;
+    margin: 15px;
+    transition: 1s;
+    max-width: 500px;
+    max-height: 700px;
+    align-self: center;
+}
+
+
+.floatingImgs2{
+    float: left;
+    border-radius: 4px;
+    margin: 15px;
+    transition: 1s;
+    max-width: 500px;
+    max-height: 300px;
+    align-self: center;
 }
