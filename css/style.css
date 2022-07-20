@@ -104,7 +104,7 @@ article{
     transition: 500ms;
 }
 
-.scroller>svg{
+.scroller>a{
     text-decoration: none;
     color: black;
 }
