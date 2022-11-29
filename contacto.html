@@ -37,11 +37,11 @@
                 <p>Formulario de contacto</p>
                 <form action="#" class="form">
                     <div class="form__group">
-                        <input type="text" placeholder=" " name="nombre" id="nombre" class="form__input"> <label for="#nombre" class="form__label">Nombre</label>
-                        <input type="text" placeholder=" " name="apellido" id="apellido" class="form__input"> <label for="#apellido"class="form__label">Apellido</label>
-                        <input type="text" placeholder=" " name="correo" class="form__input"> <label for="correo"class="form__label">Correo</label>
+                        <input type="text" placeholder=" " name="nombre" id="nombre" class="form__input" required> <label for="#nombre" class="form__label">Nombre</label>
+                        <input type="text" placeholder=" " name="apellido" id="apellido" class="form__input" required> <label for="#apellido"class="form__label">Apellido</label>
+                        <input type="text" placeholder=" " name="correo" class="form__input" required> <label for="correo"class="form__label">Correo</label>
                         <input type="text" placeholder=" " name="empresa" class="form__input"> <label for="empresa"class="form__label">Empresa (opcional)</label>
-                        <textarea name="mensaje" placeholder=" " id="sms" cols="30" rows="5" class="textarea"></textarea> <label for="mensaje" class="textarea__label">Ingrese su mensaje</label>
+                        <textarea name="mensaje" placeholder=" " id="sms" cols="30" rows="5" class="textarea" required></textarea> <label for="mensaje" class="textarea__label">Ingrese su mensaje</label>
                         <input type="submit" name="btn" value="Enviar">
                     </div>
                 </form>
